@@ -8,7 +8,8 @@ import reportWebVitals from './reportWebVitals';
 import "bootstrap/dist/css/bootstrap.css";
 import store from './store';
 
-console.log(store.getState());
+// console.log(store.getState());
+
 ReactDOM.render(
   <React.StrictMode>
     <Provider store={ store}>
