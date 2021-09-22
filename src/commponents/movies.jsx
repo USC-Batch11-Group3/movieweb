@@ -12,8 +12,6 @@ const Movies = () => {
       `https://api.themoviedb.org/3/movie/popular?api_key=${API_KEY}`
     );
     const movieData = await movieResponse.json();
-    console.log(movieData);
-    console.log(movies);
     setMovies(movieData.results);
   };
 

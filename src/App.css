@@ -62,21 +62,21 @@
 }
 
 .like {
-  width: 2.5rem;
+  /* width: 2.5rem;
   margin: 0.5rem 0.7rem 0 0;
-  background-color: red;
+  background-color: red; */
 }
 
 .block {
-  width: 3rem;
-  background-color: grey;
+  /* width: 3rem;
+  background-color: grey; */
 }
 
 .like,
 .block {
-  display: inline-block;
+  /* display: inline-block;
   height: 1.5rem;
   color: #fff;
   border-radius: 5px;
-  cursor: pointer;
+  cursor: pointer; */
 }

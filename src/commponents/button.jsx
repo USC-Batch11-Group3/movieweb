@@ -1,10 +1,37 @@
-import React from "react";
+import React, { useContext } from "react";
+import { GlobalContext } from "../context/globalState";
 
-const Button = () => {
+const Button = (props) => {
+  const { addMovieToLikelist, likeList } = useContext(GlobalContext);
+  let storedLikedMovie = likeList.find((listId) => listId.id === props.data.id);
+  const likedMovie = storedLikedMovie ? true : false;
+
+  const { addMovieToDiscard, discardList } = useContext(GlobalContext);
+  let storedDiscardMovie = discardList.find(
+    (listId) => listId.id === props.data.id
+  );
+  const discardMovie = storedDiscardMovie ? true : false;
   return (
     <div className="button">
-      <span className="like">Like</span>
-      <span className="block">Block</span>
+      <button
+        disabled={likedMovie}
+        onClick={() => {
+          addMovieToLikelist(props.data);
+        }}
+        className="like"
+      >
+        Like
+      </button>
+
+      <button
+        disabled={discardMovie}
+        onClick={() => {
+          addMovieToDiscard(props.data);
+        }}
+        className="block"
+      >
+        Block
+      </button>
     </div>
   );
 };

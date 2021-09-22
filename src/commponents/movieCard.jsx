@@ -15,7 +15,7 @@ const MovieCard = (props) => {
           Score: {props.data.vote_average} | Count: {props.data.vote_count}
         </div>
       </div>
-      <Button />
+      <Button data={props.data} />
       <span className="movie-title">{truncate(props.data.title)}</span>
       <span className="release-date">{props.data.release_date}</span>
     </div>

@@ -1,9 +1,15 @@
-import React from 'react';
+import React, { useContext } from "react";
+import { GlobalContext, GlobalProvider } from "../context/globalState";
 
 const DisLikedMovies = () => {
-    return (
-        <h1>Discard Movies</h1>
-     );
-}
- 
+  const { discardList } = useContext(GlobalContext);
+  return (
+    <div>
+      {discardList.map((movie) => (
+        <h1>{movie.title}</h1>
+      ))}
+    </div>
+  );
+};
+
 export default DisLikedMovies;
