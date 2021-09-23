@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import './movieCard.css' 
 
 
 const MovieDetail = (props) => {
@@ -29,12 +30,14 @@ const MovieDetail = (props) => {
 
   return (
     <div className="details">
-      <h2> {data.original_title}</h2>
-      <h3>{data.release_date}</h3>
-      <h4>{data.vote_average}</h4>
-      <img src={`https://image.tmdb.org/t/p/w300${data.poster_path}`}/>
-      <h5>{data.genres.map((item) => ` | ${item.name}`)}</h5>
-      <p> {data.overview}</p>
+      <div className="movie-image"><img src={`https://image.tmdb.org/t/p/w300${data.poster_path}`}/></div>
+      <div className="movie-description">
+        <h1 className="movie-title">{data.original_title}</h1>
+        <div className="moive-date">{data.release_date}</div>
+        <div className="movie-genre">{data.genres.map((item) => ` | ${item.name}`)}</div>
+        <div className="movie-overview">{data.overview}</div>
+        <div className="movie-vote">{`${data.vote_average}/10`}</div>
+      </div>
     </div>
   );
 };

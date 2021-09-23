@@ -1,3 +1,63 @@
 .title {
   background-color: red;
 }
+
+.details {
+  box-sizing: border-box;
+  position: absolute;
+  z-index: 5;
+  width: 100%;
+  background-color: #373b69;
+}
+
+.movie-image {
+  box-sizing: border-box;
+  width: 30%;
+  margin: 0;
+  padding: 20px;
+  display: inline-block;
+}
+
+.movie-image img {
+  width: 70%;
+}
+
+.movie-description {
+  box-sizing: border-box;
+  width: 60%;
+  margin: 20px;
+  display: inline-block;
+  vertical-align:middle;
+}
+
+.movie-title {
+  color: white;
+} 
+
+.moive-date{
+  font-size: larger;
+  padding: 5px;
+  color: white;
+} 
+
+.movie-genre {
+  display: inline-block;
+  color: white;
+  padding: 10px;
+  font-size: larger;
+
+} 
+
+.movie-overview {
+  padding: 5px;
+  border-style: groove;
+  border-radius: 20px;
+  font-size: large;
+  color: white;
+}
+
+.movie-vote{
+  padding: 10px;
+  font-size: larger;
+  color: white;
+}
