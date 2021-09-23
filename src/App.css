@@ -37,6 +37,10 @@
   }
 }
 
+.loader {
+  margin: 0 auto;
+}
+
 .container {
   height: 100%;
   display: flex;
@@ -62,23 +66,36 @@
 }
 
 .like {
-  /* width: 2.5rem;
-  margin: 0.5rem 0.7rem 0 0;
-  background-color: red; */
+  background-color: rgb(209, 67, 67);
+  margin-right: 0.2rem;
 }
 
 .block {
-  /* width: 3rem;
-  background-color: grey; */
+  background-color: rgb(129, 127, 127);
+  margin-left: 0.2rem;
 }
 
 .like,
 .block {
-  /* display: inline-block;
-  height: 1.5rem;
   color: #fff;
+  border: none;
   border-radius: 5px;
-  cursor: pointer; */
+}
+
+.pagination-button {
+  display: flex;
+  margin-top: 1rem;
+  justify-content: center;
+}
+
+.prev,
+.next {
+  background-color: rgb(182, 177, 177);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 0.1rem 0.5rem;
+  margin: 0 1rem;
 }
 
 .like_lists{

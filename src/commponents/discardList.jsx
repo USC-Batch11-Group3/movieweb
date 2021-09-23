@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import { GlobalContext, GlobalProvider } from "../context/globalState";
+import { GlobalContext } from "../context/globalState";
 
 const DisLikedMovies = () => {
   const { discardList } = useContext(GlobalContext);

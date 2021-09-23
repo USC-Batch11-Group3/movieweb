@@ -1,7 +1,10 @@
 import React, { useContext } from "react";
+
 import { GlobalContext, GlobalProvider } from "../context/globalState";
 import Likelist_each from "./likelist_each";
 import './like_list.css' 
+
+
 
 
 const LikedMovies = () => {
