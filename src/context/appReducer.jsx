@@ -9,7 +9,17 @@ export default (state, action) => {
       return {
         ...state,
         discardList: [action.payload, ...state.discardList],
+        likeList: state.likeList.filter(item => item.poster_path !== action.payload.poster_path)
       };
+    //  addBack
+    case "DELETE_LIKE_MOVIE":
+      return {
+        ...state,
+        likeList: state.likeList.filter(item => item.poster_path !== action.payload.poster_path)
+        // console.log(action.payload)
+      }
+      //  addBack
+    
     default:
       return state;
   }

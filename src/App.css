@@ -80,3 +80,10 @@
   border-radius: 5px;
   cursor: pointer; */
 }
+
+.like_lists{
+  display: flex;
+  background-color: 'green';
+  flex-wrap: wrap;
+}
+
