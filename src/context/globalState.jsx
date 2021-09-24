@@ -1,7 +1,6 @@
 import React, { createContext, useReducer, useEffect } from "react";
 import appReducer from "./appReducer";
 
-
 // inital state
 const initialState = {
   likeList: localStorage.getItem("likeList")
@@ -31,10 +30,13 @@ export const GlobalProvider = (props) => {
   };
 
   // putLikeMovieBack
- const deleteLike =(movie)=>{
-   dispatch({type:'DELETE_LIKE_MOVIE', payload:movie})
- };
-   // putLikeMovieBack
+  const deleteLike = (movie) => {
+    dispatch({ type: "DELETE_LIKE_MOVIE", payload: movie });
+  };
+  // putLikeMovieBack
+  const deleteDiscard = (movie) => {
+    dispatch({ type: "DELETE_DISCARD_MOVIE", payload: movie });
+  };
 
   return (
     <GlobalContext.Provider
@@ -46,7 +48,7 @@ export const GlobalProvider = (props) => {
         // DeleteLike
         deleteLike,
         // DeleteLike
-
+        deleteDiscard,
       }}
     >
       {props.children}

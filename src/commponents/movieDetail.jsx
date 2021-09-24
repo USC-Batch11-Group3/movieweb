@@ -1,11 +1,9 @@
 import React, { useState, useEffect } from "react";
-import './movieCard.css' 
-
+import "./movieCard.css";
 
 const MovieDetail = (props) => {
   const [data, setData] = useState();
   const { id } = props.match.params;
-
 
   useEffect(() => {
     let isMounted = true;
@@ -15,7 +13,7 @@ const MovieDetail = (props) => {
     )
       .then((res) => res.json())
       .then((results) => {
-         console.log(results);
+        console.log(results);
 
         if (isMounted) setData(results);
       })
@@ -30,11 +28,15 @@ const MovieDetail = (props) => {
 
   return (
     <div className="details">
-      <div className="movie-image"><img src={`https://image.tmdb.org/t/p/w300${data.poster_path}`}/></div>
+      <div className="movie-image">
+        <img src={`https://image.tmdb.org/t/p/w300${data.poster_path}`} />
+      </div>
       <div className="movie-description">
         <h1 className="movie-title">{data.original_title}</h1>
         <div className="moive-date">{data.release_date}</div>
-        <div className="movie-genre">{data.genres.map((item) => ` | ${item.name}`)}</div>
+        <div className="movie-genre">
+          {data.genres.map((item) => ` | ${item.name}`)}
+        </div>
         <div className="movie-overview">{data.overview}</div>
         <div className="movie-vote">{`${data.vote_average}/10`}</div>
       </div>
