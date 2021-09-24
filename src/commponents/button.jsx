@@ -20,7 +20,7 @@ const Button = (props) => {
         }}
         className="like"
       >
-        Like
+        {likedMovie ? "Liked" : "Like"}
       </button>
 
       <button
