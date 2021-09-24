@@ -1,7 +1,6 @@
 import React, { useContext } from "react";
 import { GlobalContext } from "../context/globalState";
 
-
 const Button = (props) => {
   const { addMovieToLikelist, likeList } = useContext(GlobalContext);
   let storedLikedMovie = likeList.find((listId) => listId.id === props.data.id);
@@ -21,7 +20,7 @@ const Button = (props) => {
         }}
         className="like"
       >
-        Like
+        {likedMovie ? "Liked" : "Like"}
       </button>
 
       <button
