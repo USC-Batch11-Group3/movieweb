@@ -28,17 +28,25 @@ const MovieDetail = (props) => {
 
   return (
     <div className="details">
-      <div className="movie-image">
-        <img src={`https://image.tmdb.org/t/p/w300${data.poster_path}`} />
-      </div>
-      <div className="movie-description">
-        <h1 className="movie-title">{data.original_title}</h1>
-        <div className="moive-date">{data.release_date}</div>
-        <div className="movie-genre">
-          {data.genres.map((item) => ` | ${item.name}`)}
+      <img
+        className="backdrop"
+        src={`https://image.tmdb.org/t/p/w1280${data.backdrop_path}`}
+      />
+      <div className="info-container">
+        <div className="movie-image">
+          <img src={`https://image.tmdb.org/t/p/w500${data.poster_path}`} />
         </div>
-        <div className="movie-overview">{data.overview}</div>
-        <div className="movie-vote">{`${data.vote_average}/10`}</div>
+        <div className="movie-description">
+          <h1 className="movie-title">{data.original_title}</h1>
+          <div className="moive-date">{data.release_date}</div>
+          <div className="movie-genre">
+            {data.genres.map((item) => (
+              <span id={item.name.split(" ").join("")}>{item.name}</span>
+            ))}
+          </div>
+          <div className="movie-overview">{data.overview}</div>
+          <div className="movie-vote">Score: {`${data.vote_average} / 10`}</div>
+        </div>
       </div>
     </div>
   );

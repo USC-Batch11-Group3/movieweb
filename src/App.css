@@ -98,9 +98,8 @@
   margin: 0 1rem;
 }
 
-.like_lists{
+.like_lists {
   display: flex;
-  background-color: 'green';
+  background-color: "green";
   flex-wrap: wrap;
 }
-
