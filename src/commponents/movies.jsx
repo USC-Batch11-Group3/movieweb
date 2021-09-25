@@ -99,19 +99,32 @@ const Movies = () => {
 
   return (
     <div>
-      <button onClick={sortByTitle}>
-        {sortType === "asc" ? "Title ascending" : "Title descending"}
-      </button>
-      <button onClick={sortByDate}>
-        {sortType === "asc" ? "Date ascending" : "Date descending"}
-      </button>
-      <button onClick={sortByRated}>
-        {sortType === "asc" ? "Score ascending" : "Score descending"}
-      </button>
-      <button onClick={sortByCount}>
-        {sortType === "asc" ? "Count ascending" : "Count descending"}
-      </button>
       <Pagination data={movies} currentPage={currentPage} newPage={newPage} />
+
+      <div id="btn-group-home" className="pagination-button">
+        <button
+          className="btn btn-outline-secondary me-2"
+          onClick={sortByTitle}
+        >
+          {sortType === "asc" ? "Title ascending" : "Title descending"}
+        </button>
+        <button className="btn btn-outline-secondary me-2" onClick={sortByDate}>
+          {sortType === "asc" ? "Date ascending" : "Date descending"}
+        </button>
+        <button
+          className="btn btn-outline-secondary me-2"
+          onClick={sortByRated}
+        >
+          {sortType === "asc" ? "Score ascending" : "Score descending"}
+        </button>
+        <button
+          className="btn btn-outline-secondary me-2"
+          onClick={sortByCount}
+        >
+          {sortType === "asc" ? "Count ascending" : "Count descending"}
+        </button>
+      </div>
+
       <Container className="container">
         {loading ? (
           <Loader />

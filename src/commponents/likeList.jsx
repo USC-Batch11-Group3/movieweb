@@ -20,7 +20,7 @@ const LikedMovies = () => {
     <div className="page">
       <p className="subtitle ">Movie List of Liked</p>
 
-      <div className="like_lists_container">
+      <div className="container">
         {likeList.map((movie) => (
           <MovieLikeOrDiscardCard key={movie.id} movie={movie} />
         ))}

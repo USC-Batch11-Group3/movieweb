@@ -14,17 +14,13 @@
   height: auto;
   display: flex;
   flex-wrap: wrap;
-  left: 10%;
+  margin: auto;
   position: absolute;
-
-  right: 10%;
   padding-bottom: 20px;
 }
 .each {
   background-color: inherit;
-  margin-right: 15px;
-  margin-left: 23px;
-  margin-bottom: 20px;
+  margin: 2rem 1rem 0 0;
   width: 234px;
   height: 352px;
 }

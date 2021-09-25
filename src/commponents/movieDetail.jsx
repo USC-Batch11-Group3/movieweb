@@ -36,10 +36,14 @@ const MovieDetail = (props) => {
       <img
         className="backdrop"
         src={`https://image.tmdb.org/t/p/w1280${data.backdrop_path}`}
+        alt=""
       />
       <div className="info-container">
         <div className="movie-image">
-          <img src={`https://image.tmdb.org/t/p/w500${data.poster_path}`} />
+          <img
+            src={`https://image.tmdb.org/t/p/w500${data.poster_path}`}
+            alt=""
+          />
         </div>
         <div className="movie-description">
           <h1 className="movie-title">{data.original_title}</h1>

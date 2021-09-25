@@ -9,9 +9,9 @@ const DisLikedMovies = () => {
     <div className="page">
       <p className="subtitle">Movie List of Discard</p>
 
-      <div className="like_lists_container">
+      <div className="container">
         {discardList.map((movie) => (
-          <MovieLikeOrDiscardCard movie={movie} />
+          <MovieLikeOrDiscardCard key={movie.id} movie={movie} />
         ))}
       </div>
     </div>
