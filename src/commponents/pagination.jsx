@@ -5,7 +5,7 @@ const Pagination = (props) => {
   return (
     <div className="pagination-button">
       <button
-        className="prev"
+        className={pageDisabled ? "prev dispable" : "prev"}
         disabled={pageDisabled}
         onClick={() => props.newPage("previous")}
       >

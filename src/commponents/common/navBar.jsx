@@ -5,13 +5,13 @@ const NavBar = () => {
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-light">
       <Link className="navbar-brand" to="/">
-        <i className="bi bi-camera-reels ms-5"></i>
+        <i className="bi bi-camera-reels ms-4"></i>
       </Link>
       <button
         className="navbar-toggler"
         type="button"
-        data-toggle="collapse"
-        data-target="#navbarNavAltMarkup"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNavAltMarkup"
         aria-controls="navbarNavAltMarkup"
         aria-expanded="false"
         aria-label="Toggle navigation"
@@ -19,7 +19,7 @@ const NavBar = () => {
         <span className="navbar-toggler-icon" />
       </button>
       <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <div className="navbar-nav">
+        <div className="navbar-nav ms-4 me-auto mb-2 mb-lg-0">
           <NavLink className="nav-item nav-link" to="/">
             Home
           </NavLink>

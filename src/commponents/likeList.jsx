@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import { GlobalContext, GlobalProvider } from "../context/globalState";
+import { GlobalContext } from "../context/globalState";
 import "./like_list.css";
 import MovieLikeOrDiscardCard from "./common/moiveLikeOrDiscardCard";
 
@@ -22,7 +22,7 @@ const LikedMovies = () => {
 
       <div className="like_lists_container">
         {likeList.map((movie) => (
-          <MovieLikeOrDiscardCard movie={movie} />
+          <MovieLikeOrDiscardCard key={movie.id} movie={movie} />
         ))}
       </div>
     </div>

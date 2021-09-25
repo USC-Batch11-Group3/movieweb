@@ -98,6 +98,10 @@
   padding: 0.1rem 0.5rem;
   margin: 0 1rem;
 }
+.prev,
+.disable {
+  cursor: not-allowed;
+}
 
 .like_lists {
   display: flex;
