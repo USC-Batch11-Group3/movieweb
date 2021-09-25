@@ -26,8 +26,13 @@ const MovieDetail = (props) => {
 
   if (!data) return null;
 
+  const handleClose = () => {
+    props.history.push("/movies");
+  };
+
   return (
     <div className="details">
+      <i className="bi bi-x-circle-fill" onClick={handleClose}></i>
       <img
         className="backdrop"
         src={`https://image.tmdb.org/t/p/w1280${data.backdrop_path}`}

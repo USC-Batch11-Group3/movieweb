@@ -13,7 +13,7 @@ function App() {
   return (
     <GlobalProvider>
       <NavBar />
-      <main className="container">
+      <main>
         <Switch>
           <Route path="/movies/:id" component={MovieDetail} />
           <Route path="/movies" component={Movies} />

@@ -19,13 +19,24 @@
   position: fixed;
   left: 50%;
   top: 50%;
-  width: 95%;
-  height: auto;
+  width: 80%;
+  height: 60%;
   transform: translate(-50%, -50%);
-  background-color: rgb(0, 0, 0, 0.55);
+  background-color: rgb(0, 0, 0, 0.8);
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
   padding: 20px;
+  border-radius: 20px;
+}
+.bi-x-circle-fill {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 2rem;
+  color: #dcdcdc;
+  cursor: pointer;
 }
 
 .movie-image {

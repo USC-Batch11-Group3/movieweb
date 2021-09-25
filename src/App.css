@@ -44,7 +44,7 @@
 .container {
   height: 100%;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: flex-start;
   flex-wrap: wrap;
 }
 
@@ -53,6 +53,7 @@
   flex-direction: column;
   text-align: center;
   margin-top: 1.5rem;
+  margin-right: 1rem;
   position: relative;
 }
 

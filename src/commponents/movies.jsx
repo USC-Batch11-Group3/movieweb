@@ -112,7 +112,7 @@ const Movies = () => {
         {sortType === "asc" ? "Count ascending" : "Count descending"}
       </button>
       <Pagination data={movies} currentPage={currentPage} newPage={newPage} />
-      <Container>
+      <Container className="container">
         {loading ? (
           <Loader />
         ) : (
