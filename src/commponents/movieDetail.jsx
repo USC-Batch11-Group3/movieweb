@@ -48,7 +48,7 @@ const MovieDetail = (props) => {
             />
           </div>
           <div className="movie-description col">
-            <h1 className="movie-title">{data.original_title}</h1>
+            <h1 className="movie-title-white">{data.original_title}</h1>
             <div className="moive-date">{data.release_date}</div>
             <div className="movie-genre">
               {data.genres.map((item) => (

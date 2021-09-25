@@ -63,6 +63,9 @@
 .movie-title {
   color: black;
 }
+.movie-title-white {
+  color: white;
+}
 
 .moive-date {
   font-size: larger;
