@@ -4,7 +4,7 @@ Team members:
 Lisa Li
 Eric Lin,
 Tong Zhao,
-Adien Zheng
+Aiden Zheng
 
 This is a movie web for people to browse the movies information. The movie API is from https://www.themoviedb.org/?language=en-US. 
 You can find more information about the movie api here:https://developers.themoviedb.org/3/authentication/how-do-i-generate-a-session-id.
