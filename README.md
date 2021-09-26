@@ -19,6 +19,6 @@ Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 
-### Github Pages
+## Github Pages
 
 Your can also find the site at https://usc-batch11-group3.github.io/movieweb/
