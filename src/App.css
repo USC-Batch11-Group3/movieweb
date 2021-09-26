@@ -36,3 +36,76 @@
     transform: rotate(360deg);
   }
 }
+
+.loader {
+  margin: 0 auto;
+}
+
+.container {
+  height: 100%;
+  display: flex;
+  margin: auto;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.movieCard {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 2rem 1rem 0 0;
+  position: relative;
+}
+
+.movieCard img {
+  height: 22rem;
+  width: 14.67rem;
+  cursor: pointer;
+}
+.movieCard span {
+  font-weight: 600;
+}
+
+.like {
+  background-color: rgb(209, 67, 67);
+  margin-right: 0.2rem;
+}
+
+.block {
+  background-color: rgb(129, 127, 127);
+  margin-left: 0.2rem;
+}
+
+.like,
+.block {
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+}
+
+.pagination-button {
+  display: flex;
+  flex-direction: row;
+  margin-top: 1rem;
+  justify-content: center;
+}
+
+.prev,
+.next {
+  background-color: rgb(182, 177, 177);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 0.1rem 0.5rem;
+  margin: 0 1rem;
+}
+.prev,
+.disable {
+  cursor: not-allowed;
+}
+
+.like_lists {
+  display: flex;
+  background-color: "green";
+  flex-wrap: wrap;
+}
