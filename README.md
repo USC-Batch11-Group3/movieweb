@@ -17,8 +17,3 @@ In the project directory, you can run: `npm start` for localhost
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-
-## Github Pages
-
-Your can also find the site at https://usc-batch11-group3.github.io/movieweb/
