@@ -1,7 +1,7 @@
 # Movie Web App
 
 Team members:
-Lisa Li
+Lisa Li,
 Eric Lin,
 Tong Zhao,
 Aiden Zheng
